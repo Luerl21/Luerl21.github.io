@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru" style="height: auto;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Luerl</title>
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+<link href="./css/luerl.css" rel="stylesheet">
+<script src="./js/jquery.js"></script>
+<script src="./js/main.js"></script>
+<script src="https://kit.fontawesome.com/8224491b5f.js" crossorigin="anonymous"></script>
+</head>
+
+<body onmousedown="return false" onselectstart="return false"> 
+<div class="preloader"><div class="pl-l"></div><div class="pl-r"></div><div class="pl-line"><div></div></div></div>
+<style>body{overflow:hidden}</style>
+<div id="star" class="video mask overlay">
+<i onclick="myFunction(this), pauseplay();" class="stop-button fa fa-pause" title="Плей\Пауза Видео"></i>
+<script>
+function myFunction(x) {
+  x.classList.toggle("fa-play");
+  x.classList.toggle("fa-pause");
+}
+</script>
+<i onclick="refresh();" class="brefreshbutton fa fa-refresh fa-spin" title="Посмотреть другое видео"></i>
+
+<div class="video-fallback"></div>
+<video id="video" onloadstart="this.volume=0.3" loop="" autoplay="">
+<source src="./videos/6HOST I HOPE YOU CAVE.mp4">  
+</video>
+</div>
+
+<div class="pageoverlay">
+<div class="lightbox">
+<div class="awrapper">
+<div class="titles animated rubberBand" style="animation-delay: 3s;">
+<div class="animated zoomIn" style="animation-delay: 2s;">
+  <div class="pagebottom">
+<h1 class="name"><font class="rainbow">#</font><font color="#FFFFFF">Luerl</font></h1>
+</div></div>
+<div class="media animated fadeInUpBig" style="animation-delay: 2s;">
+
+<a href="https://vk.com/56sd4asd548" id="vk" title="Я Вконтакте." target="_blank">
+<i class="fa fa-vk hvr-grow"></i></a>
+
+<a href="https://github.com/Luerl21" target="_blank">
+<i class="fa fa-brands fa-github hvr-grow" title="Свалка прогера."></i>
+
+<a href="http://t.me/Luerl0_0" target="_blank">
+<i class="fa fa-paper-plane hvr-grow" title="Написать мне сообщение."></i></a>
+
+<!-- <a href="https://www.instagram.com/luerl.ml/?hl=ru" title="Тут ничего нет." target="_blank"> -->
+<!-- <i class="fab fa-instagram hvr-grow"></i></a> -->
+
+<!-- <a href="https://onidaru-test.herokuapp.com" title="Discord bot." target="_blank">
+<i class="fa-brands fa-discord hvr-grow"></i></a> -->
+
+<a href="https://shikimori.one/Luerl/list/manga/" title="Моя библиотека." target="_blank">
+<i class="fab fa-readme hvr-grow"></i></a>
+
+</div></div>
+<div class="animated zoomIn" style="animation-delay: 4s;">
+<a href="../ban/"><div class="button shake-slow shake-constant">BANNED?</div></a></div>
+</div></div>
+
+<script>
+var _d = document,
+    _p = _d.querySelector('.preloader');
+
+setTimeout(function(){
+  _p.classList.add('is-loaded')
+}, 1000);
+</script>
+
+</body>
+</html>
