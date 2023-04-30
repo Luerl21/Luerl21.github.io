@@ -16,7 +16,11 @@ function pauseplay(x) {
 	}	
 	else video.pause();
 }
+
 document.addEventListener('DOMContentLoaded', function() {
+	document.getElementById("video").addEventListener('loadeddata', function() {
+		x.classList.replace("fa-play", "fa-pause");
+	 }, false);
 	if(video.paused) {
 		document.getElementById("pause/play").classList.replace("fa-pause", "fa-play");
 	}
