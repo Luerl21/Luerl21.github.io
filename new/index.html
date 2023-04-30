@@ -12,17 +12,11 @@
 <div class="preloader"><div class="pl-l"></div><div class="pl-r"></div><div class="pl-line"><div></div></div></div>
 <style>body{overflow:hidden}</style>
 <div id="star" class="video mask overlay">
-<i onclick="myFunction(this), pauseplay();" class="stop-button fa fa-pause" title="Плей\Пауза Видео"></i>
-<script>
-function myFunction(x) {
-  x.classList.toggle("fa-play");
-  x.classList.toggle("fa-pause");
-}
-</script>
+<i onclick="pauseplay(this);" id="pause/play" class="stop-button fa fa-pause" title="Плей\Пауза Видео"></i>
 <i onclick="refresh();" class="brefreshbutton fa fa-refresh fa-spin" title="Посмотреть другое видео"></i>
 
 <div class="video-fallback"></div>
-<video id="video" onloadstart="this.volume=0.3" loop="" autoplay="">
+<video id="video" onloadstart="this.volume=0.02" loop="" autoplay="">
 <source src="./videos/bluelock.mp4">  
 </video>
 </div>
