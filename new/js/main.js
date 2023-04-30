@@ -18,13 +18,19 @@ function pauseplay(x) {
 	else video.pause();video.muted = "";
 }
 
+function sleep (time) {
+	return new Promise((resolve) => setTimeout(resolve, time));
+  }
+
 document.addEventListener('DOMContentLoaded', function() {
 	var x = this.getElementById("pause/play");
 	document.getElementById("video").addEventListener('loadeddata', function() {
 		x.classList.replace("fa-play", "fa-pause");
 	 }, false);
 	if(video.paused) {
-		document.getElementById("pause/play").classList.replace("fa-pause", "fa-play");
+		sleep(500).then(() => {
+			document.getElementById("pause/play").classList.replace("fa-pause", "fa-play");
+		});
 	}
 	document.addEventListener('visibilitychange', function() {
 		if (document.hidden) {
