@@ -17,6 +17,10 @@ function pauseplay(x) {
 	else video.pause();
 }
 document.addEventListener('DOMContentLoaded', function() {
+	console.log(video.paused);
+	if(video.paused) {
+		document.getElementById("pause/play").classList.replace("fa-pause", "fa-play");
+	}
 	var x = this.getElementById("pause/play");
 	document.addEventListener('visibilitychange', function() {
 		if (document.hidden) {
