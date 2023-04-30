@@ -17,7 +17,6 @@ function pauseplay(x) {
 	else video.pause();
 }
 document.addEventListener('DOMContentLoaded', function() {
-	console.log(video.paused);
 	if(video.paused) {
 		document.getElementById("pause/play").classList.replace("fa-pause", "fa-play");
 	}
