@@ -6,7 +6,7 @@ $(".volume-button").click(function mute(){
 function refresh(){
 var count = Math.floor(Math.random() * videoArray.length);
 document.getElementsByTagName('source')[0].src = "./videos/" + videoArray[count];video.load();}
-var videoArray = ["Blake Basic  BAD INFLUENCE ft Yamakazi.mp4","UNDAGROUND ENEMY.mp4","GHOSTEMANE  Pouya  Stick Out.mp4","PLAYBOI CARTI  LET EM IN.mp4", "6HOST I HOPE YOU CAVE.mp4", "jpn amend.mp4"];
+var videoArray = ["bluelock.mp4","Blake Basic  BAD INFLUENCE ft Yamakazi.mp4","UNDAGROUND ENEMY.mp4","GHOSTEMANE  Pouya  Stick Out.mp4","PLAYBOI CARTI  LET EM IN.mp4", "6HOST I HOPE YOU CAVE.mp4", "jpn amend.mp4"];
 
 function pauseplay() { 
     if(video.paused)
